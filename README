@@ -1,0 +1,18 @@
+Project: Game Of Life
+Author: Daniel Franch
+Date Created: 20/3/2013
+Language: C++
+Files:
+main.cpp
+gameOfLife.h/gameOfLife.cpp
+cell.h/cell.cpp
+
+Description: Experiments with Conway's Game of Life. The final objective
+would be to create a whole playable game based on the Game of Life's rules.
+
+Current state (21/3/2013): Simple board of GoL running on terminal with
+hard-coded input. To run the code with different configurations it is needed
+to change the defines for WIDTH and HEIGHT and manually create a configuration
+using the matrix hardCodedInput in the gameOfLife's constructor.
+The output needs you to press any key to go to the next state, but the output
+board follows the rules correctly.
