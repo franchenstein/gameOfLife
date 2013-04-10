@@ -7,10 +7,10 @@
 
 #include "gameOfLife.h"
 #include "cell.h"
+#include <windows.h>
 
 gameOfLife::gameOfLife() {
     
-    char check; //Dummy variable to store cin before going to next state.
     //TODO: Turn this into a user input:
     bool hardCodedInit[WIDTH][HEIGHT] =
     {
@@ -36,10 +36,6 @@ gameOfLife::gameOfLife() {
     }
     
     cout << endl;
-    
-     //TODO: Find some better way to go to the next state, perhaps cleaning
-     //      screen.
-    cin >> check;
     
     run();
 }
@@ -84,9 +80,7 @@ void gameOfLife::run(){
         }
         cout << endl;
         
-        //TODO: Find some better way to go to the next state, perhaps cleaning
-        //      screen.
-        cin >> check;
+        cin.ignore();
     }
     
 }
